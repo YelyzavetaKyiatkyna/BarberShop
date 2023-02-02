@@ -337,8 +337,14 @@ body {
   margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 .barbers-item {
+  width: calc((100%-60px) / 3);
+}
+.barbers-item-wrap {
+  padding-top: 30px;
 }
 .barbers-item-title {
   font-weight: 400;
@@ -347,6 +353,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 .barbers-item-text {
   font-size: 14px;
@@ -358,14 +365,20 @@ body {
 
 /*--------------------------GALLERY----------------------*/
 .gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .gallery-pre-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.gallery-list-item {
+.gallery-item {
+  width: calc((100%-90px) / 4);
 }
