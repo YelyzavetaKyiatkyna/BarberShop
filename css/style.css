@@ -402,6 +402,7 @@ body {
 .barbers {
   padding-bottom: 120px;
   padding-top: 120px;
+  background: #f7f7f7;
 }
 .barbers-pre-title {
   color: #303030;
@@ -455,13 +456,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff6c00;
+  background-color: var(--main-btn-color);
 }
 .barbers-soc-icon {
-  fill: var(--main-btn-color);
+  fill: rgba(48, 48, 48, 1);
 }
-.barbers-soc-link:is(:hover, :focus) {
-  background-color: blueviolet;
+.barbers-soc-link:is(:hover, :focus) .barbers-soc-icon {
+  fill: rgba(255, 108, 0, 1);
 }
 /*--------------------------GALLERY----------------------*/
 .gallery {
@@ -481,4 +482,34 @@ body {
 
 .gallery-item {
   width: calc((100%-90px) / 4);
+}
+
+.contact-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: rgba(25, 28, 38, 1);
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+}
+
+.contact-wrap > .container {
+  display: flex;
+}
+.online {
+  padding-top: 130px;
+  width: calc(50% + 15px);
+}
+.online-title {
+  color: var(--main-title-color);
+}
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  width: calc(50% - 15px);
+  padding-left: 100px;
+}
+.contacts-title {
+  color: var(--main-title-color);
 }
